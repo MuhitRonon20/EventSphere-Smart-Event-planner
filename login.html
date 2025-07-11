@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+
+      <select name="user_type" id="userType" required>
+        <option value="" disabled selected>Select User Type</option>
+        <option value="organizer">Organizer</option>
+        <option value="vendor">Vendor</option>
+        <option value="attendee">Attendee</option>
+      </select>
+
+      <button type="submit">Log In</button>
+
+      <div class="forgot-password">
+        <a href="resetpass.html">Forgot Password?</a>
+      </div>
+      <a class="signup-link" href="signup.html">Don't have an account? Sign up</a>
+    </form>
+  </div>
+
+  <!-- External JS -->
+  <script src="login.js"></script>
+</body>
+</html>

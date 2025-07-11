@@ -1,0 +1,121 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+/* Container Styling */
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 400px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+/* Heading */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #6bc1ff;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.login-container button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 242, 254, 0.4);
+}
+
+/* Forgot password */
+.forgot-password {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.forgot-password a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+  color: #d3f3ff;
+}
+
+/* Signup link */
+.signup-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  color: #e0f7ff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.6rem;
+  }
+}
