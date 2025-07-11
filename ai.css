@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.navbar {
+  background: #121212;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  color: #f97316;
+  font-size: 1.8rem;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+
+.form-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+form input {
+  background: #333;
+  color: #fff;
+}
+
+form button {
+  background: #f97316;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.plan-preview {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.plan-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.plan-card {
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.plan-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card h4 {
+  margin: 0.5rem 0;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.actions button {
+  margin: 0 1rem;
+  padding: 10px 20px;
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+
+.toast.show {
+  opacity: 1;
+}
+/* Navigation Bar */
+.navbar {
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f97316;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #f97316;
+  color: #fff;
+}

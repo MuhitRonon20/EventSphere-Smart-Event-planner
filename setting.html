@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="setting.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">EventSphere</h1>
+    <ul class="nav-links">
+    
+      <li><a href="organizerdb.html">Home</a></li>
+      <li><a href="myevent.html">My Events</a></li>
+      <li><a href="budget.html">Budget Tracker </a></li>
+      <li><a href="#">Smart Event </a></li>
+      <li><a href="login.html">Logout</a></li>
+      <li><a href="setting.html">⚙️</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="profile-section">
+
+      <h2>Edit Profile</h2>
+
+      <div class="profile-pic">
+        <img id="profileImage" src="default-profile.png" alt="Profile Picture">
+        <input type="file" id="uploadPhoto" accept="image/*" onchange="previewImage(event)">
+      </div>
+
+      <form id="profileForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <input type="text" id="phone" placeholder="Phone Number" />
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+
+    <div class="history-section">
+      <h2>Event History</h2>
+      <table>
+        <thead>
+          <tr><th>Event</th><th>Date</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Wedding Expo</td><td>Aug 2, 2025</td><td>Completed</td></tr>
+          <tr><td>Startup Meet</td><td>Aug 8, 2025</td><td>Upcoming</td></tr>
+          <tr><td>Tech Conference</td><td>Sep 5, 2025</td><td>Upcoming</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="setting.js"></script>
+</body>
+</html>

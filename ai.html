@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Event Planner</title>
+  <link rel="stylesheet" href="ai.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">EventSphere AI Planner</h1>
+    <ul class="nav-links">
+      <li><a href="organizerdb.html">Home</a></li>
+      <li><a href="myevent.html">My Events</a></li>
+      <li><a href="budget.html">Budget Tracker </a></li>
+      <li><a href="ai.html">Smart Event </a></li>
+      <li><a href="login.html">Logout</a></li>
+      <li><a href="setting.html">⚙️</a></li>
+    </ul>
+  </nav>
+
+  <section class="form-section">
+    <h2>Plan Your Event with AI</h2>
+    <form id="eventForm">
+      <input type="text" id="eventType" placeholder="Event Type (e.g. Wedding, Conference)" required />
+      <input type="number" id="totalPeople" placeholder="Total People" required />
+      <input type="number" id="budget" placeholder="Total Budget ($)" required />
+      <button type="submit">Generate Plan</button>
+    </form>
+  </section>
+
+  <section id="planPreview" class="plan-preview" style="display:none;">
+    <h2>AI Suggested Plan</h2>
+    <div id="planItems" class="plan-items"></div>
+    <div class="actions">
+      <button onclick="acceptPlan()">Accept Plan</button>
+      <button onclick="customizePlan()">Customize Plan</button>
+    </div>
+  </section>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="ai.js"></script>
+</body>
+</html>

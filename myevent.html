@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Event Dashboard</title>
+  <link rel="stylesheet" href="myevent.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">EventSphere</h1>
+    <ul class="nav-links">
+      <li><a href="organizerdb.html">Home</a></li>
+      <li><a href="myevent.html">My Events</a></li>
+      <li><a href="budget.html">Budget Tracker</a></li>
+      <li><a href="ai.html">Smart Event</a></li>
+      <li><a href="login.html">Logout</a></li>
+      <li><a href="setting.html">⚙️</a></li>
+    </ul>
+  </nav>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Select Category</h2>
+    <div class="category-list"></div>
+  </section>
+
+  <!-- Subcategories -->
+  <section class="subcategory-section" id="subcategorySection"></section>
+
+  <!-- Items -->
+  <section class="items-section" id="itemsSection"></section>
+
+  <!-- Cart Panel -->
+  <aside class="cart-panel" id="cartPanel">
+    <h3>Selected Items</h3>
+    <ul id="cartItems"></ul>
+    <div class="total">Total: $<span id="totalCost">0</span></div>
+    <div class="checkout">
+      <button onclick="checkoutCart()">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast">Checkout successful! Total: $0</div>
+  <button id="cartToggleBtn" class="cart-toggle-btn">🛒</button>
+
+  <script src="myevent.js"></script>
+</body>
+</html>
