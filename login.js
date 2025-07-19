@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (userType === 'vendor') {
       window.location.href = 'vendordb.html';
     } else if (userType === 'attendee') {
-      window.location.href = 'attendeedb.html';
+      window.location.href = 'attendee.html';
     } else if (userType === 'client') {
       window.location.href = 'clientdb.html'; // redirect for client
     } else {
