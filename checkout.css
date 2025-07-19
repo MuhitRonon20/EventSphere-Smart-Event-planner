@@ -77,3 +77,28 @@ textarea {
 .confirm-btn:hover {
   background: #e95f04;
 }
+
+.popup {
+  display: none;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.popup h2 {
+  color: #22c55e;
+}
+
+.popup button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #f97316;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

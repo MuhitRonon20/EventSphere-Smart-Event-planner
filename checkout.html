@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="checkout.css" />
 </head>
 <body>
-
-  <div class="container">
+  <div class="container" id="checkoutContainer">
     <h1>Checkout Summary</h1>
 
     <!-- Cart History -->
@@ -40,6 +39,15 @@
         <button type="submit" class="confirm-btn">Confirm & Pay</button>
       </form>
     </div>
+  </div>
+
+  <!-- Confirmation Popup -->
+  <div class="popup" id="confirmationPopup">
+    <h2>🎉 Congratulations!</h2>
+    <p>Your order has been successfully placed.</p>
+    <div id="transcript"></div>
+    <button onclick="downloadTranscript()">Download Transcript</button>
+    <button onclick="shareEvent()">Share This Event</button>
   </div>
 
   <script src="checkout.js"></script>
