@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat with Organizer</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">EventSphere</div>
+    <ul class="nav-links">
+      <li><a href="attendee.html">Dashboard</a></li>
+      <li><a href="attendeeevent.html">My Events</a></li>
+      <li><a href="RSVP.html">RSVP</a></li>
+      <li><a href="ticket.html">Tickets</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><a href="profile.html">Settings</a></li> 
+      <li><a href="login.html">Logout</a></li> 
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Select Event to Chat with Organizer</h2>
+    <div class="event-list" id="eventList">
+      <button onclick="openChat('Wedding Expo 2025', 'Emily Rahman')">Wedding Expo 2025</button>
+      <button onclick="openChat('Tech Conference 2024', 'Arif Mahmud')">Tech Conference 2024</button>
+      <button onclick="openChat('Food Carnival 2025', 'Sarah Jahan')">Food Carnival 2025</button>
+    </div>
+
+    <div class="chat-container" id="chatSection" style="display: none;">
+      <h3>Chat with Organizer of <span id="eventName"></span></h3>
+      <p class="organizer-name">Organizer: <strong id="organizerName"></strong></p>
+
+      <div class="chat-box" id="chatBox">
+        <div class="message organizer">Hello! How can I help you with this event?</div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="userMessage" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

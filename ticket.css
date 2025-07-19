@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 30px;
+}
+
+.top-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top-nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.ticket-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.ticket {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 700px;
+  padding: 30px;
+  gap: 20px;
+}
+
+.ticket-left {
+  flex: 2;
+}
+
+.ticket-right {
+  flex: 1;
+  text-align: center;
+}
+
+.ticket-right img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.ticket-right button {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ticket-right button:hover {
+  background: #1565c0;
+}
+
+.status {
+  margin-top: 15px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.status.confirmed {
+  background: #d4edda;
+  color: #2e7d32;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #b8860b;
+}
+
+.status.canceled {
+  background: #f8d7da;
+  color: #c62828;
+}
+button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* green background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: #3e9142;
+}

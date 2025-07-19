@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Feedback</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">EventSphere</div>
+    <ul class="nav-links">
+      <li><a href="attendee.html">Dashboard</a></li>
+      <li><a href="attendeeevent.html">My Events</a></li>
+      <li><a href="RSVP.html">RSVP</a></li>
+      <li><a href="ticket.html">Tickets</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><a href="profile.html">Settings</a></li> 
+      <li><a href="login.html">Logout</a></li> 
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Previous Events</h2>
+    <div class="event-list" id="eventList">
+      <button onclick="selectEvent('Wedding Expo 2025')">Wedding Expo 2025</button>
+      <button onclick="selectEvent('Tech Conference 2024')">Tech Conference 2024</button>
+      <button onclick="selectEvent('Food Carnival 2025')">Food Carnival 2025</button>
+    </div>
+
+    <div class="feedback-container" id="feedbackSection" style="display: none;">
+      <h2>Rate Your Experience</h2>
+      <p class="event-name">Event: <strong id="selectedEventName"></strong></p>
+
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+
+      <textarea id="comment" placeholder="Write your feedback here..."></textarea>
+      <button onclick="submitFeedback()">Submit</button>
+
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="feedback.js"></script>
+</body>
+</html>

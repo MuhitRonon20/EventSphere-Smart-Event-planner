@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Event Tickets</title>
+  <link rel="stylesheet" href="ticket.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">EventSphere</div>
+    <ul class="nav-links">
+      <li><a href="attendee.html">Dashboard</a></li>
+      <li><a href="attendeeevent.html">My Events</a></li>
+      <li><a href="RSVP.html">RSVP</a></li>
+      <li><a href="ticket.html">Tickets</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><a href="profile.html">Settings</a></li> 
+      <li><a href="login.html">Logout</a></li> 
+    </ul>
+  </nav>
+
+  <div class="ticket-container">
+    
+    <!-- Dummy Event 1 -->
+    <div class="ticket">
+      <div class="ticket-left">
+        <h2>Live Music Festival 2025</h2>
+        <p><strong>Date:</strong> August 25, 2025</p>
+        <p><strong>Time:</strong> 7:00 PM</p>
+        <p><strong>Venue:</strong> Grand Arena, Dhaka</p>
+        <label for="seat1"><strong>Seat:</strong></label>
+        <select id="seat1" class="seat-select">
+          <option value="" selected disabled>Select seat</option>
+          <option value="Zone A - Row 3 - Seat 12">Zone A - Row 3 - Seat 12</option>
+          <option value="Zone B - Row 5 - Seat 18">Zone B - Row 5 - Seat 18</option>
+          <option value="VIP - Row 1 - Seat 1">VIP - Row 1 - Seat 1</option>
+        </select>
+        <div class=""></div>
+        <button onclick="generateQR('qr1', 'seat1', 'LiveMusicFest2025')">Confirm Booking</button>
+      </div>
+      <div class="ticket-right">
+        <img id="qr1" style="display:none;" alt="QR Code">
+      </div>
+    </div>
+
+    <!-- Dummy Event 2 -->
+    <div class="ticket">
+      <div class="ticket-left">
+        <h2>Startup Expo 2025</h2>
+        <p><strong>Date:</strong> September 10, 2025</p>
+        <p><strong>Time:</strong> 10:00 AM</p>
+        <p><strong>Venue:</strong> Bangabandhu Convention Center</p>
+        <label for="seat2"><strong>Seat:</strong></label>
+        <select id="seat2" class="seat-select">
+          <option value="" selected disabled>Select seat</option>
+          <option value="Hall 1 - Row 4 - Seat 10">Hall 1 - Row 4 - Seat 10</option>
+          <option value="Hall 2 - Row 6 - Seat 15">Hall 2 - Row 6 - Seat 15</option>
+          <option value="Front Row - VIP 03">Front Row - VIP 03</option>
+        </select>
+        <div class=""></div>
+        <button onclick="generateQR('qr2', 'seat2', 'StartupExpo2025')">Confirm Booking</button>
+      </div>
+      <div class="ticket-right">
+        <img id="qr2" style="display:none;" alt="QR Code">
+      </div>
+    </div>
+
+    <!-- Dummy Event 3 -->
+    <div class="ticket">
+      <div class="ticket-left">
+        <h2>Bangla Concert 2025</h2>
+        <p><strong>Date:</strong> October 5, 2025</p>
+        <p><strong>Time:</strong> 5:00 PM</p>
+        <p><strong>Venue:</strong> Lake Shore Convention Center</p>
+        <label for="seat3"><strong>Seat:</strong></label>
+        <select id="seat3" class="seat-select">
+          <option value="" selected disabled>Select seat</option>
+          <option value="Main Floor - Seat 8">Main Floor - Seat 8</option>
+          <option value="Balcony - Seat 22">Balcony - Seat 22</option>
+          <option value="Golden Zone - VIP 01">Golden Zone - VIP 01</option>
+        </select>
+        <div class=" "></div>
+        <button onclick="generateQR('qr3', 'seat3', 'WeddingExpo2025')">Confirm Booking</button>
+      </div>
+      <div class="ticket-right">
+        <img id="qr3" style="display:none;" alt="QR Code">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="ticket.js"></script>
+</body>
+</html>
