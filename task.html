@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organizer Task Dashboard</title>
+  <link rel="stylesheet" href="task.css"/>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="top-nav">
+    <div class="logo">EventSphere</div>
+    <ul class="nav-links">
+      <li><a href="organizerdb.html">Home</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="vendor.html">Vendors</a></li>
+      <li><a href="organizersetting.html">Settings</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <div class="dashboard-container">
+    <div class="event-list">
+      <h3>Recent Events</h3>
+      <ul id="eventButtons">
+        <!-- Buttons will be populated by JavaScript -->
+      </ul>
+    </div>
+
+    <div class="task-section">
+      <h3 id="eventTitle">Select an Event to View Tasks</h3>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <ul class="task-list" id="taskList">
+        <!-- Tasks will be loaded here -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Notification -->
+  <div id="notification" class="notification"></div>
+
+  <script src="task.js"></script>
+</body>
+</html>

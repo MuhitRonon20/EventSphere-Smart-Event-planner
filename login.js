@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = 'vendordb.html';
     } else if (userType === 'attendee') {
       window.location.href = 'attendeedb.html';
+    } else if (userType === 'client') {
+      window.location.href = 'clientdb.html'; // redirect for client
     } else {
       alert("Please select a user type.");
     }

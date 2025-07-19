@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Organizer</title>
+  <link rel="stylesheet" href="organizersetting.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">EventSphere</div>
+    <ul class="nav-links">
+      <li><a href="organizerdb.html">Home</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="vendor.html">Vendors</a></li>
+      <li><a href="organizersetting.html" class="active">Settings</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="settings-container">
+    <h2>Edit Your Profile</h2>
+    <form id="profileForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="+8801XXXXXXXXX" required />
+      </div>
+      <div class="form-group">
+        <label for="profileImage">Profile Photo</label>
+        <input type="file" id="profileImage" />
+      </div>
+      <button type="submit">Save Changes</button>
+    </form>
+    <p id="saveMessage"></p>
+  </div>
+
+  <script src="organizersetting.js"></script>
+</body>
+</html>

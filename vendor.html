@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vendor Dashboard</title>
+  <link rel="stylesheet" href="vendor.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="logo">EventSphere</div>
+    <ul class="nav-links">
+      <li><a href="organizerdb.html">Home</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="vendor.html">Vendors</a></li>
+      <li><a href="organizersetting.html">Settings</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Dashboard -->
+  <div class="dashboard">
+    <div class="sidebar">
+      <h3>Categories</h3>
+      <ul id="categoryList"></ul>
+    </div>
+
+    <div class="content">
+      <div id="typeSection" class="section"></div>
+      <div id="vendorSection" class="section"></div>
+    </div>
+
+    <div class="chatbox" id="chatbox">
+      <h4 id="chatVendorName">Chat with Vendor</h4>
+      <div class="messages" id="messages">
+        <div class="message">Hi, how can I help you?</div>
+      </div>
+      <div class="input-area">
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor.js"></script>
+</body>
+</html>
