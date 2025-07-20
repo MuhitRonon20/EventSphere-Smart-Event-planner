@@ -70,7 +70,7 @@ function displayPlan(plan) {
 
 function acceptPlan() {
   showToast("Plan Accepted! Redirecting to dashboard...");
-  setTimeout(() => window.location.href = "organizerdb.html", 2000);
+  setTimeout(() => window.location.href = "clientdb.html", 2000);
 }
 
 function customizePlan() {
