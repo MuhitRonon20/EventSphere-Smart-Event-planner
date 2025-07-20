@@ -19,6 +19,6 @@ function goToDashboard() {
 
 function logout() {
   alert("Logging out...");
-  window.location.href = "login.html"; // or homepage
+  window.location.href = "index.html"; // or homepage
 }
 
